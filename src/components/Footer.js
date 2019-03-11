@@ -7,7 +7,7 @@ class Footer extends Component {
 
                 <div className="row footer">
                     <div className="col-md-6 col-sm-12">
-                        <img id="logofooter" src="assets/img/logo/logo-alterra-academy-plain.png" />
+                        <img id="logofooter" src={require ("../img/logo/logo-alterra-academy-plain.png")} />
                         <p id="copyright"> &copy; Copyright Alterra Group 2019</p>
                     </div>
 
@@ -16,15 +16,15 @@ class Footer extends Component {
                             <p className="textfollowme">Follow Us On</p>
                             <ul>
                                 <li className="listsosmed">
-                                    <img className="imgsosmed" src="assets/img/ico/ico-facebook.png" />
+                                    <img className="imgsosmed" src={require ("../img/ico/ico-facebook.png")} />
                                     <span className="textsosmed" id="facebook">Facebook</span>
                                 </li>
                                 <li className="listsosmed">
-                                    <img className="imgsosmed" src="assets/img/ico/ico-twitter.png" />
+                                    <img className="imgsosmed" src={require ("../img/ico/ico-twitter.png")} />
                                     <span className="textsosmed">Twitter</span>
                                 </li>
                                 <li className="listsosmed">
-                                    <img className="imgsosmed" src="assets/img/ico/ico-instagram.png" />
+                                    <img className="imgsosmed" src={require ("../img/ico/ico-instagram.png")} />
                                     <span className="textsosmed">Instagram</span>
                                 </li>
                             </ul>

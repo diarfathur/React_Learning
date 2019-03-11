@@ -1,0 +1,22 @@
+.navbar {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #19345E;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid whitesmoke;
+    margin-bottom: 10px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    color: #19345E;
+    text-decoration: none;
+  }
+  
+  
+  .navbar a:hover {
+    background-color: whitesmoke;
+  }
