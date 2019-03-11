@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900i');
+
+.leftcolumn {
+    background-image: url(../img/side-view.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+.leftcolumn::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(25, 52, 94, 0.8);
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+@media(max-width: 575px) {
+    .leftcolumn {
+        display: none;
+    }
+}
+.logoimage{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+    z-index: 2;
+}
+
+h1 {
+    color: #19345E;
+    font-family: 'Muli', sans-serif;
+    font-size: 28px;
+}
+
+p {
+    color: #535353;
+    font-family: 'Muli,light', sans-serif;
+    font-size: 12px;
+}
+
+form {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn.btn-warning.btn-lg.btn-block {
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 53;
+}
+
+.btn.btn-warning.btn-lg.btn-block:hover {
+    background-color: red !important;
+    transition: 2s;
+}
+
+
+.editphone {
+    height: 20px;
+}
+
+.formisi{
+    margin: 10px 100px 80px 100px;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border-right-style: none;
+}
+
+.form-control {
+    background-color: transparent;
+    border-left-style: none;
+}
+
+#national, #message{
+    border-left-style: solid;
+}
+
+select.input-lg {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    /* no standardized syntax available, no ie-friendly solution available */
+}
+
+.select-arrow {
+    position: relative;
+}
+.select-arrow:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    background-image: url(../img/ico/down-arrow.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 11px;
+    background-size: 15px;
+    padding: 0px 25px 0px 0px;
+}

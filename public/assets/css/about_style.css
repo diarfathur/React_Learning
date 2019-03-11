@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.aboutheader {
+    background-color: white;
+}
+
+#logo{
+    padding-left: 106px;
+    margin: 5px;
+}
+
+.nav {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    list-style: none;
+    color: #19345E;
+}
+#navbarku {
+    padding-right: 106px;
+    padding-top: 25px;
+}
+
+.headerlist {
+    padding-right: 5px;
+}
+
+#active {
+    color: #F47522;
+}
+
+#section_profile {
+    background-image: url(../img/img-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+#profile-image {
+    border-radius: 50%;
+    height: 174px; 
+    width: 174px;
+}
+
+#myname {
+    font-family: "Muli", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 13px;
+}
+#mylocation {
+    font-family: "Muli", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+#ico-location {
+    height: 21px;
+    margin-right: 2px;
+}
+#mydescription {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Muli", sans-serif;   
+}
+#cv-button {
+    margin-top: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Muli", sans-serif;
+    background-color: #F47522;
+    padding: 16px 43px 16px 43px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+#cv-button:hover {
+    font-family: "Muli", sans-serif;
+    background-color: white;
+    color: #F47522;
+    border: none;
+}
+
+
+.myprofile {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px lightgrey solid;
+    margin-top: 60px;
+    margin-bottom: 140px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px #DEDEDE;
+}
+
+#aboutme {
+    
+    text-align: left;
+    padding: 32px 120px 75px 80px;
+    width:  50%;
+}
+
+#information {
+    
+    text-align: left;
+    padding: 32px 100px 75px 80px;
+    width:  50%;
+}
+
+h4 {
+    color:#19345E;
+    font-size: 25px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+#phar1, #phar2, #phar3 {
+    
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#alterra {
+    color: #F47522;
+}
+
+.tabelinformasi {
+    border: 1px #CBCBCB solid;
+    color: black;
+}
+
+.tabelinformasi tr {
+    border: 1px #CBCBCB solid;
+}
+
+.tabelinformasi th {
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    border: 1px #CBCBCB solid;
+    font-weight: 700;
+    height: 40px;
+    width: 90px;
+    padding-left: 15px;
+}
+
+.tabelinformasi td {
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    border: 1px #CBCBCB solid;
+    font-weight: 400;
+    height: 40px;
+    width: 298px;
+    padding-left: 15px;
+}
+
+#tabelrow2 {
+    background-color: #E3E3E3;
+}
+
+.footer {
+    background-color: #19345E;
+    border: 1px solid #707070;
+}
+
+#logofooter {
+    padding: 44px 0 0 106px;
+}
+
+#copyright {
+    padding: 20px 0 0 106px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.followme {
+    float: right;
+    padding: 44px 40px 0 0;
+}
+
+.textfollowme {
+    color: white;
+    font-size: 17px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+
+.textsosmed{
+    padding: 1px 0 0 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+}
+
+#facebook {
+    margin-left: 6px;
+}
+
+.listsosmed{
+    list-style: none;
+    margin-right: 100px;
+    text-align: left;
+}
+.imgsosmed {
+    margin-right: 10px;
+}
+
+.followme ul {
+    padding-left: 0;
+}

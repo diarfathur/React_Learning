@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.aboutheader {
+    background-color: white;
+}
+
+#logo{
+    padding-left: 106px;
+    margin: 5px;
+}
+
+.nav {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    list-style: none;
+    color: #19345E;
+}
+#navbarku {
+    padding-right: 106px;
+    padding-top: 25px;
+}
+
+.headerlist {
+    padding-right: 5px;
+}
+
+#active {
+    color: #F47522;
+}
+
+.picturegalery {
+    width: 45.47px;
+    height: 41.27px;
+    opacity: 100%;
+}
+
+h1 {
+    width: 91px;
+    height: 30px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    color: #19345E;
+    opacity: 100%;
+    align-content: left;
+}
+
+hr {
+    background-color:#19345E;
+    margin: 25px 0px 25px 0px;
+    width: 100%;
+    height: 1px;
+}
+
+.picture1 {
+    width: 305px 100hh;
+    height: 305px;
+    color: #8B8B8B;
+    opacity: 100%;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px;
+}
+
+.picture2 {
+    width: 305px 100hh;
+    height: 305px;
+    color: #8B8B8B;
+    opacity: 100%;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px;
+}
+
+.picture3 {
+    width: 305px 100hh;
+    height: 305px;
+    color: #8B8B8B;
+    opacity: 100%;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px;
+}
+
+.picture4 {
+    width: 305px 100hh;
+    height: 305px;
+    color: #8B8B8B;
+    opacity: 100%;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px;
+}
+
+.picture5 {
+    width: 305px 100hh;
+    height: 305px;
+    color: #8B8B8B;
+    opacity: 100%;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px;
+}
+
+.picture6 {
+    width: 305px 100hh;
+    height: 305px;
+    color: #8B8B8B;
+    opacity: 100%;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px;
+}
+
+.footer {
+    background-color: #19345E;
+    border: 1px solid #707070;
+    height: 207px;
+}
+
+#logofooter {
+    padding: 44px 0 0 106px;
+}
+
+#copyright {
+    padding: 20px 0 0 106px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.followme {
+    float: right;
+    padding: 44px 40px 0 0;
+}
+
+.textfollowme {
+    color: white;
+    font-size: 17px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.textsosmed{
+    padding: 1px 0 0 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+}
+
+#facebook {
+    margin-left: 6px;
+}
+
+.listsosmed{
+    list-style: none;
+    margin-right: 100px;
+    text-align: left;
+}
+.imgsosmed {
+    margin-right: 10px;
+}
+
+.followme ul {
+    padding-left: 0;
+}
