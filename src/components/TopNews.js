@@ -1,42 +1,53 @@
 import React, { Component } from 'react';
+import axios from 'axios'
+import TopNewsItem from './TopNewsItem';
+
+const noImg = '../img/No_Image_Available.jpg';
+const anon = 'Anonymous'
+const apiKey = 'e74dfabd2d864debb564eea6a21bd7ee';
+const cari = 'indonesia'
+const urlTopNews = 'https://newsapi.org/v2/top-headlines?q=' + cari + '&pageSize=5&apiKey=' + apiKey
+
 
 class TopNews extends Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         listNews: [],
+         userName: "",
+         isLogin: false
+      }
+   }
+
+   componentDidMount = () => {
+      const self = this;
+      axios
+         .get(urlTopNews)
+         .then(function (response) {
+            self.setState({ listNews: response.data.articles })
+         })
+         .catch(function (error) {
+            console.log(error);
+         });
+   }
+
    render() {
+      const { listNews, userName, isLogin } = this.state;
       return (
-         <div class="col-md-4 col-12">
-            <div class="list-group">
-               <a href="#" class="list-group-item list-group-item-action active">
-                  <div class="d-flex w-100">
-                     <h5 class="mb-1 ">Berita Paling Populer</h5>
-                  </div>
-               </a>
-               <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                     <h5 class="mb-1"><u>Lorem Ipsum</u></h5>
-                     <small class="text-muted">13:00</small>
-                  </div>
-                  <small class="text-muted">Diposting oleh: Kita</small>
-               </a>
-               <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                     <h5 class="mb-1"><u>Lorem Ipsum</u></h5>
-                     <small class="text-muted">14:00</small>
-                  </div>
-                  <small class="text-muted">Diposting oleh: Kita</small>
-               </a>
-               <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                     <h5 class="mb-1"><u>Lorem Ipsum</u></h5>
-                     <small class="text-muted">14:00</small>
-                  </div>
-                  <small class="text-muted">Diposting oleh: Kita</small>
-               </a><a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                     <h5 class="mb-1"><u>Lorem Ipsum</u></h5>
-                     <small class="text-muted">14:00</small>
-                  </div>
-                  <small class="text-muted">Diposting oleh: Kita</small>
-               </a>
+         <div class="col-md-4">
+            <div className="card">
+               <h5 className="pl-3 pt-2">Popular News</h5>
+               {listNews.map((item, key) => {
+                  const img = item.urlToImage === null ? noImg : item.urlToImage;
+                  const url = item.url;
+                  const title = item.title;
+                  const publishedAt = item.publishedAt;
+                  const author = item.author === null ? anon : item.author;
+                  const content = item.content;
+
+                  return <TopNewsItem key={key} img={img} url={url} title={title} publishedAt={publishedAt}
+                     author={author} content={content} />
+               })}
             </div>
          </div>
       );

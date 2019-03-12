@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/about_style.css';
-import Header from './Header';
-import Footer from './Footer';
-import ContentIndex from './ContentIndex';
-import Search from './Search';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ContentIndex from '../components/ContentIndex';
+import Search from '../components/Search';
 
 
 class App extends Component {
@@ -11,7 +11,6 @@ class App extends Component {
       return (
          <div>
             <Header/>
-            <Search/>
             <ContentIndex/>
             <Footer/>
          </div>

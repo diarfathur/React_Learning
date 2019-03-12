@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/galery_style.css';
 import '../styles/about_style.css';
-import Header from './Header';
-import Footer from './Footer';
-import ContentGallery from './ContentGallery';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ContentGallery from '../components/ContentGallery';
 
 class Gallery extends Component {
     render() {
