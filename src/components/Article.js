@@ -1,54 +1,40 @@
 import React, { Component } from 'react';
-import axios from 'axios'
-import ArticleItem from './ArticleItem';
-
-const noImg = '../img/No_Image_Available.jpg';
-const anon = 'Anonymous'
-const apiKey = 'e74dfabd2d864debb564eea6a21bd7ee';
-const cari = 'indonesia'
-const urlTopNews = 'https://newsapi.org/v2/everything?q=' + cari + '&pageSize=5&apiKey=' + apiKey
+import PropTypes from "prop-types";
+import ArticleItem from './ArticleItem'
 
 
 class Article extends Component {
    constructor(props) {
       super(props);
-      this.state = {
-         listNews: [],
-         userName: "",
-         isLogin: false
+      this.props = {
+         img: this.props.img
       }
    }
-
-   componentDidMount = () => {
-      const self = this;
-      axios
-         .get(urlTopNews)
-         .then(function (response) {
-            self.setState({ listNews: response.data.articles })
-         })
-         .catch(function (error) {
-            console.log(error);
-         });
-   }
-
+  
    render() {
-      const { listNews, userName, isLogin } = this.state;
       return (
-         <div class="col-md-8 col-12">
-            {listNews.map((item, key) => {
-               const img = item.urlToImage === null ? noImg : item.urlToImage;
-               const url = item.url;
-               const title = item.title;
-               const publishedAt = item.publishedAt;
-               const author = item.author === null ? anon : item.author;
-               const content = item.description;
 
-               return <ArticleItem key={key} img={img} url={url} title={title} publishedAt={publishedAt}
-                  author={author} content={content} />
-            })}
+         <div className="card mb-2">
+            <div className="card-body">
+               <ArticleItem img={this.props.img} />
+
+               <h5 className="card-title"><a href={this.props.url}>{this.props.title}</a></h5>
+               <p className="card-text"><small className="text-muted">Posted At {this.props.publishedAt}</small></p>
+               <p className="card-text"><small className="text-muted">By {this.props.author}</small></p>
+               <p className="card-text">{this.props.content}</p>
+            </div>
          </div>
       );
    }
+}
+
+Article.propTypes = {
+   img: PropTypes.string.isRequired,
+   url: PropTypes.string.isRequired,
+   title: PropTypes.string.isRequired,
+   publishedAt: PropTypes.string.isRequired,
+   author: PropTypes.string.isRequired,
+   content: PropTypes.string.isRequired
 }
 
 export default Article;
