@@ -2,20 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// import App from './pages/App';
-// import MyBlog from './pages/MyBlog';
-// import Gallery from './pages/Gallery';
-// import Contact from './pages/Contact';
+import { store } from './Store'
 import AppRouter from './AppRouter';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'unistore/react';
 
 const rootEl = document.getElementById("root");
 const render = Component =>
     ReactDOM.render(
-        <BrowserRouter>
-            <Component />
-        </BrowserRouter>,
+        <Provider store={store}>
+            <BrowserRouter>
+                <Component />
+            </BrowserRouter>
+        </Provider>,
         rootEl
     );
 

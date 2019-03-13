@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Header = props => {
    return (
-      <div className="container-fluid">
+      <div className="container">
          <div className="row aboutheader">
-            <div className="col-md-6">
+            <div className="col-md-3 col-sm-12 col-12">
                <img id="logo" src={require("../img/logo/logo-alterra-academy.png")} alt="logo-alterra" />
             </div>
-            <div className="col-md-6">
-               <nav>
+            <div className="col-md-9 col-sm-12 col-12">
+               <nav className="justify-content-end">
                   <ul className="nav justify-content-end headerlist" id="navbarku">
                      <li className="nav-item">
                         <Link className="nav-link" to="/">HOME</Link>
@@ -33,7 +33,7 @@ const Header = props => {
                         <Link className="nav-link btn-success" to="/signin">SIGN IN</Link>
                      </li>
                      <li className="nav-item">
-                        <Link className="nav-link btn-danger" to="/" onClick={() => props.postSignOut()}>SIGN OUT</Link>
+                        <Link className="nav-link btn-danger" to="/" onClick={() => this.props.postSignout()}>SIGN OUT</Link>
                      </li>
                   </ul>
                </nav>

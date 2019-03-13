@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import '../styles/contact_style.css'
 
 
 class Contact extends Component {
     render() {
         return (
             <div>
-                <form class="container-fluid">
+                <form class="container-fluid text-left">
                     <div class="row">
                         <div class="col-md-6 col-sm-12 leftcolumn">
                             <a href="about.html">

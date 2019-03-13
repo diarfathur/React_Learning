@@ -8,10 +8,10 @@ class BlogControl extends Component {
       return (
          <div class="container">
             <div class="navbar">
-               <a href="#sport" onClick={this.props.sportClick}>Sport</a>
-               <a href="#news" onClick={this.props.businessClick}>Business</a>
-               <a href="#news" onClick={this.props.politicClick}>Politic</a>
-               <a href="#news" onClick={this.props.styleClick}>Style</a>
+               <button className="btn btn-light" style={{background: "none"}} href="#sport" value="Sport" onClick={(e) => this.props.catagoryClick(e)}>Sport</button>
+               <button className="btn btn-light" style={{background: "none"}} href="#news" value="Business" onClick={(e) => this.props.catagoryClick(e)}>Business</button>
+               <button className="btn btn-light" style={{background: "none"}} href="#news" value="Politic" onClick={(e) => this.props.catagoryClick(e)}>Politic</button>
+               <button className="btn btn-light" style={{background: "none"}} href="#news" value="Technology" onClick={(e) => this.props.catagoryClick(e)}>Technology</button>
                <form class="form-inline float-left">
                   <input class="form-control mr-sm-2" type="search" placeholder="Cari..." aria-label="Search" onChange={this.props.doSearch}/>
                   <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
@@ -23,4 +23,3 @@ class BlogControl extends Component {
 }
 
 export default BlogControl;
-
